@@ -1,4 +1,4 @@
-#Create a nested dictionary to store details of two students.
+# Create a nested dictionary to store details of two students.
 
 # user_input = (input("Enter first subject:" ),
 #              input("Enter second subject:" ),
@@ -12,7 +12,7 @@
 # print(len(typecast))
 
 
-#Create a nested dictionary to store details of two students.
+# Create a nested dictionary to store details of two students.
 
 # Students_details = {
 #     "student1" : {
@@ -92,7 +92,7 @@
 #         s1 = student("Shubham", 18)
 
 #         print(s1.name)
-        # print(s1.age)
+#         print(s1.age)
 
 
 # class account:
@@ -101,19 +101,19 @@
 #         self.balance = balance
 
 #     def deposit(self, amount):
-    #     self.balance += amount
-    #     print(f"Deposit successful. New balance: {self.balance}")
+#         self.balance += amount
+#         print(f"Deposit successful. New balance: {self.balance}")
 
-    # def withdraw(self, amount):
-    #     if amount > self.balance:
-    #         print("Insufficient funds.")
-    #     else:
-    #         self.balance -= amount
-    #         print(f"Withdrawal successful. New balance: {self.balance}")
+#     def withdraw(self, amount):
+#         if amount > self.balance:
+#             print("Insufficient funds.")
+#         else:
+#             self.balance -= amount
+#             print(f"Withdrawal successful. New balance: {self.balance}")
 
-    #         acc1 = account("Shubham", 1000)
-    #         acc1.deposit(500)
-    #         acc1.withdraw(1200)
+#             acc1 = account("Shubham", 1000)
+#             acc1.deposit(500)
+#             acc1.withdraw(1200)
 
 
 
@@ -829,3 +829,44 @@
     
 # table(67)
 
+# with open("poem.txt", "r") as f:
+#     read = f.read()
+#     print(read)
+
+#     if "twinkle" in read:
+#         print("Yes")
+#     else:
+#         print("NO")
+
+# def tables(n):
+#     with open(f"tables/table_{n}", "w") as f:
+#         for i in range(1,11):
+#             f.write(f"{n} X {i} = {n*i}\n")
+
+# for i in range(2,21):
+#     tables(i)
+
+
+
+# def tables(n):
+#     with open(f"tables/tables{n}", "w") as f:
+#         for i in range(1,11):
+#             f.write(f"{n} X {i} = {n*i}\n")
+
+# for i in range(2, 200001):
+#     tables(i)
+
+# with open("file.txt", "r") as f:
+#     read = f.read()
+
+#     if "donkey" in read:
+#         read = read.replace("donkey", "#" *len("donkey"))
+
+#         with open("file.txt", "w") as f:
+#             f.write(read)
+
+# words = ["donkey", "donkey", "monkey", "donkey"]
+
+# words = ["#" * len(word) if word == "donkey" else word for word in words]
+
+# print(words)
