@@ -8,7 +8,11 @@ dictionary = {
     "shabad" : "word"
 }
 word = input("Enter word whose meaning you want to know in english!: ")
-print(f"The meaning of {word} in english is: {dictionary[word]}")
+if word in dictionary:
+     print(f"The meaning of {word} in english is: {dictionary[word]}")
+else:
+     print(f"Sorry, {word} is not in dictionary")
+
 
 # 2. Write a program to input eight numbers from the user and display all the unique 
 # numbers (once).
