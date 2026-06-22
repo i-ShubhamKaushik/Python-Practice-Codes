@@ -64,6 +64,17 @@ inches_to_cm(12)
 # 7. Write a python function to remove a given word from a list ad strip it at the same 
 # time.
 
+def rem(l, word):
+    n = []
+
+    for item in l:
+        if item.strip() != word:
+            n.append(item.strip())
+    return n
+
+l = ["Harry", "Rohan", "Shubham", "an"]
+
+print(rem(l, "an"))
 
 
 # 8. Write a python function to print multiplication table of a given number. 

@@ -95,3 +95,18 @@ if os.path.exists("File Input&Output/rename_this.txt"):
     print("File renamed successfully..!")
 else:
     print("File doesn't exist..!")
+
+# 10. Write a program to find out the line number where python is present from ques 6.
+
+with open("File Input&Output/log.txt", "r") as f:
+    lines = f.readlines()
+
+    line_no = 1
+    for line in lines:
+        if "python" in line.lower():
+            print(f"Yes, Python is present. Line no. : {line_no}")
+            break
+        line_no += 1
+
+    else:
+        print("Python is not present..!")
