@@ -52,3 +52,9 @@ except ZeroDivisionError:
 
 with open("Advance Python - 1/tables.txt", "a") as f:
     f.write(f"Table of {n} : {str(list)}\n")          #linked with question no. 3
+
+
+# 6. Give an example of walrus.
+
+if (n:= len([1,3,42,2,0])) > 4:
+    print(f"List is too long ({n} elements, expected <=4)")
