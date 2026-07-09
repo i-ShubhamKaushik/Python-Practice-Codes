@@ -51,4 +51,4 @@ except ZeroDivisionError:
 # 5. Store the multiplication tables generated in problem 3 in a file named Tables.txt. 
 
 with open("Advance Python - 1/tables.txt", "a") as f:
-    f.write(f"Table of {n} : {str(list)}\n")
+    f.write(f"Table of {n} : {str(list)}\n")          #linked with question no. 3
