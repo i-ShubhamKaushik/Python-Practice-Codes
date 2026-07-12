@@ -124,3 +124,27 @@ class check:
 
 person1= check("Naruto")
 print(person1.name)                    #Nothing will happen! Code will still run the same way.
+
+
+
+# 7. Create a class Circle which has attribute 'radius' and methods (area, circumference).Circle
+
+class circle:
+    def __init__(self, radius):
+        self.radius = radius
+
+    def circumference(self):
+        r= self.radius
+        circumference= 2*22/7*r
+        print(f"Circumference of Circle is: {circumference} cm.")
+
+    def area(self):
+        r= self.radius
+        area= 22/7*r**2
+        print(f"Area of Circle is : {area} cm sq.")
+
+
+
+circle1= circle(7)
+circle1.area()
+circle1.circumference()
