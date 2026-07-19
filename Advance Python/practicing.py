@@ -125,19 +125,19 @@ except ZeroDivisionError:
 
 # Call the function five times.
 
-x = 0
+count = 0
 
-def count():
-    global x
-    x +=1
+def counter():
+    global count
+    count +=1
 
-count()
-count()
-count()
-count()
-count()
+counter()
+counter()
+counter()
+counter()
+counter()
 
-print(x)
+print(count)
 
 
 
