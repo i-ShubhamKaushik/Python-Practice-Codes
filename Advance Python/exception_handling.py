@@ -98,3 +98,38 @@ else:
     print("Calculation completed successfully!")
 finally:
     print("\nProgram Ended..!\n")
+
+
+
+# 1. Write a program to open three files 1.txt, 2.txt and 3.txt if any these files are not 
+# present, a message without exiting the program must be printed prompting the same. 
+
+try:
+    with open("1.txt","r") as f:
+        print(f.read())
+except Exception as e:
+    print(e)
+
+try:
+    with open("2.txt","r") as f:
+        print(f.read())
+except Exception as e:
+    print(e)
+
+try:
+    with open("3.txt","r") as f:
+        print(f.read())
+except Exception as e:
+    print(e)
+
+
+
+# 2. Write a program to display a/b where a and b are integers. If b=0, display infinite by 
+# handling the ‘ZeroDivisionError’. 
+
+try:
+    num1= int(input("Enter number: "))
+    num2 = int(input("Enter number: "))
+    print(num1/num2)
+except ZeroDivisionError:
+    print("Can't divide a number by zero")
